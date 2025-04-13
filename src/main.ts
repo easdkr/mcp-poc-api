@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
@@ -20,8 +17,8 @@ async function bootstrap() {
 
   // Swagger 설정
   const config = new DocumentBuilder()
-    .setTitle('NestJS Aggregate Root API')
-    .setDescription('NestJS Aggregate Root 패턴을 사용한 상품 API')
+    .setTitle('NestJS MCP 연동 예제 API')
+    .setDescription('NestJS MCP 연동을 위한 상품 API')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);

@@ -10,21 +10,18 @@ NestJS 기반의 간단한 Product 관리 API와 MCP 연동을 위한 개념 증
 
 ### 설치
 
-```bash
-# 저장소 클론
-git clone https://github.com/yourusername/nestjs-aggregate-root.git
-cd nestjs-aggregate-root
-
 # 의존성 설치
+
 yarn install
-```
+
+````
 
 ### 환경 설정
 
 ```bash
 # Docker 컨테이너 실행 (PostgreSQL 및 Redis)
 docker-compose up -d
-```
+````
 
 ### 데이터베이스 마이그레이션
 
